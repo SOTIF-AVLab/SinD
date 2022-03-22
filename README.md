@@ -1,6 +1,6 @@
 # SinD
 
-The SIND dataset is a drone dataset that records signalized intersections,  providing information such as traffic participant trajectories, traffic light status, and high-resolution maps 
+The SIND dataset is a drone dataset that records signalized intersections,  providing information such as traffic participant trajectories, traffic light status, and high-definition maps 
 
 <img src="SIND.jpg">
 
