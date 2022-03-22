@@ -1,0 +1,86 @@
+# Format of the SIND dataset
+
+
+1. <kbd>Veh_smoothed_tracks.csv</kbd>  
+This file records the time-dependent vehicle trajectory and motion state parameters:
+
+|  Name   | Unit  |   Meaning    |
+|  ----  | ----  | ----  |
+| 单元格  | 单元格 | dwq
+| 单元格  | 单元格 |
+
+- track_id: the id number of the vehicle in this record	
+- frame_id:	the id number of the data frame in this record
+- timestamp_ms:	The time corresponding to each data frame
+- agent_type: the specific class to which the vehicle belongs()	
+- x	: The x position of the center of the vehicle bounding box in the ground coordinate system
+- y	: The x position of the center of the vehicle bounding box in the ground coordinate system
+- vx: The component of the center's velocity in the x-direction	
+- vy: The component of the center's velocity in the x-direction	
+- yaw_rad : the angle between the direction of the front longitudinal axis of the vehicle and the positive direction of the x-axis	
+- heading_rad: the angle between the moving direction of the center of the vehicle bounding box and the positive x-axis	
+- length: the length of the vehicle	
+- width: the width of the vehicle	
+- ax: The component of the acceleration at the center in the x direction	
+- ay: The component of the acceleration at the center in the y direction	
+- v_lon: Component of the center velocity in the direction of the vehicle's longitudinal axis
+- v_lat: Component of the center velocity in the direction of the vehicle's lateral axis
+- a_lon:Component of the center acceleration in the direction of the vehicle's longitudinal axis
+- a_lat:Component of the center acceleration in the lateral direction of the vehicle
+
+2. <kbd>Ped_smoothed_tracks.csv</kbd>  
+Similar format to <kbd>Veh_smoothed_tracks.csv</kbd>, but pedestrians are treated as points without scale and orientation.
+- track_id:the id number of the pedestrain in this record		P1,P2,...,Pn
+- frame_id:	
+- timestamp_ms:	
+- agent_type: pedestrain	
+- x:	
+- y:	
+- vx:	
+- vy:	
+- ax:	
+- ay:
+
+3. <kbd>Veh_tracks_meta.csv</kbd> 
+- track_id: 
+- trackId:	
+- initialFrame	
+- finalFrame	
+- Frame_nums
+- length:	
+- width:		
+- class: 	
+- CrossType: The class of vehicles passing through the intersection, which are classified as `StraightCross`, `LeftTurn`, `RightTurn`, and `Others`( not necessarily passing through the intersection, maybe some special action such as driving to the sidewalk)	
+- Signal_Violation_Behavior: The three labels are `red-light running`, `yellow-light running`, `No violation of traffic lights`, the first two are only for vehicles with left turn and straight ahead behavior. (In China, right turning vehicles are allowed to run red lights)
+ 
+
+
+
+4. <kbd>Ped_tracks_meta.csv</kbd>
+trackId	:
+initialFrame	
+finalFrame	
+Frame_nums	
+width	
+length	
+class	
+
+
+5. <kbd>TraficLightStates.csv</kbd>
+- RawFrameID:The original frame Id corresponding to the moment when the state of the traffic light changes(The raw frame corresponding to the data frame: Frame * 3 = RawFrameID)	
+- timestamp（ms）:	The moment when the state of the traffic light changes
+- Traffic light X(1-8): 0 for red light status, 1 for green light status, 3 for yellow light status; the traffic light position is as shown in the figure.
+
+
+6. <kbd>Recoding_metas.csv</kbd>
+- RecordingID: the record's number among all records	
+- City: The city where the data is located	
+- Record weekday: The weekday on which the data was collected	
+- Record time period: This record corresponds to a specific time period, accurate to the hour	
+- Weather:Sunny, cloudy, or after rain	
+- Raw frame rate: 29.97 	
+- Record duration:Total duration of the record 	
+- Tps_num: Total number of traffic participants in this record 	
+- number of categories(car, truck, bus, bicycle, motorcycle, tricycle, pedestrian):The number of traffic participants in each category in this record
+***
+In addition to the record file, we also provide a high-definition map of the intersection in [Lanelet2](https://github.com/fzi-forschungszentrum-informatik/Lanelet2) format, the origin of the map coincides with the origin of the ground coordinate system.
