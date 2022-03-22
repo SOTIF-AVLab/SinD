@@ -85,3 +85,5 @@ class
 - number of categories(car, truck, bus, bicycle, motorcycle, tricycle, pedestrian):The number of traffic participants in each category in this record
 ***
 In addition to the record file, we also provide a high-definition map of the intersection in [Lanelet2](https://github.com/fzi-forschungszentrum-informatik/Lanelet2) format, the origin of the map coincides with the origin of the ground coordinate system.
+
+<img src="Lanelet2Map.png" width="500">
