@@ -86,4 +86,4 @@ class
 ***
 In addition to the record file, we also provide a high-definition map of the intersection in [Lanelet2](https://github.com/fzi-forschungszentrum-informatik/Lanelet2) format, the origin of the map coincides with the origin of the ground coordinate system.
 
-<img src="Lanelet2Map.png" width="500">
+<img src="Lanelet2Map.png">
