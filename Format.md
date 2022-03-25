@@ -76,7 +76,7 @@ This document records the states of traffic lights over time:
 |Unit| [-] |[-] | [-]|[-]|
 - RawFrameID: The original frame Id corresponding to the moment when the state of the traffic light changes(The raw frame corresponding to the data frame: `Frame * 3 = RawFrameID`) 
 - timestamp（ms）:	The moment when the state of the traffic light changes 
-- Traffic light X(1-8): 0 for red light status, 1 for green light status, 3 for yellow light status; the traffic light position is as shown in the figure.
+- Traffic light X(1-8): 0 for red light status, 1 for green light status, 3 for yellow light status; the traffic light position is as shown in the Fig.1.
 
 
 6. <kbd>Recoding_metas.csv</kbd>
@@ -90,7 +90,7 @@ This document records the states of traffic lights over time:
 - Tps_num: Total number of traffic participants in this record 	
 - number of categories(car, truck, bus, bicycle, motorcycle, tricycle, pedestrian):The number of traffic participants in each category in this record
 ***
-In addition to the record file, we also provide a [high-definition map](Data_example/mapfile.osm#sdd) of the intersection in [Lanelet2](https://github.com/fzi-forschungszentrum-informatik/Lanelet2) format, the origin of the map coincides with the origin of the ground coordinate system.
+In addition to the record file, we also provide a [high-definition map](Data_example/mapfile.osm#sdd) of the intersection in [Lanelet2](https://github.com/fzi-forschungszentrum-informatik/Lanelet2) format\(see See Fig.2), the origin of the map coincides with the origin of the ground coordinate system.
 
 <img src="Lanelet2Map.png" width = 800>  
 
