@@ -58,7 +58,7 @@ This file provides the metadata of vehicle track, mainly including vehicle attri
  
 4. <kbd>Ped_tracks_meta.csv</kbd>  
 The behavior of pedestrians is not easy to describe, so we do not provide labels for their behavior type and violation type.
-
+  
 |Column| trackId | initialFrame | finalFrame |Frame_nums|  
 | ---- |  ----  | ----  | ----  | ---- |  
 |Unit| [-] |[-] | [-]|[-]|
