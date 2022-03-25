@@ -106,7 +106,8 @@ This file records some information related to data collection.
     <td>[-]</td>
     <td>[-]</td>
   </tr>
-</table>
+</table>  
+
 - RecordingID: the record's number among all records	
 - City: The city where the data is located. Only `Tianjin` is in this dataset.	
 - Record weekday: The weekday on which the data was collected.	
