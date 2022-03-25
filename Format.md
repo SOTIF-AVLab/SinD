@@ -1,6 +1,6 @@
 # Format of the SIND dataset
 
-<img src="Traffic light distribution.png">
+<img src="Ground Coordinate System and Traffic Light Distribution.png">
 
 1. <kbd>Veh_smoothed_tracks.csv</kbd>  
 This file records the time-dependent vehicle trajectory and motion state parameters:
