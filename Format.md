@@ -5,8 +5,8 @@
 1. <kbd>Veh_smoothed_tracks.csv</kbd>  
 This file records the time-dependent vehicle trajectory and motion state parameters:
 
-|  Name   | Unit  |   Meaning    |
-|  ----  | ----  | ----  |
+|  track_id   | frame_id  |   timestamp_ms | agent_type|x|y|vx|vy|yaw_rad|heading_rad|length|width|ax|ay|v_lon|V_lat|a_lon|a_lat|
+|  ----  | ----  | ----  | ---- |---- |---- |----|---- |---- |---- |---- |---- |---- |---- |---- |---- |---- |---- |
 | 单元格  | 单元格 | dwq
 | 单元格  | 单元格 |
 
