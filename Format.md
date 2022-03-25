@@ -79,7 +79,34 @@ This document records the states of traffic lights over time:
 - Traffic light X(1-8): 0 for red light status, 1 for green light status, 3 for yellow light status; the traffic light position is as shown in the Fig.1.
 
 
-6. <kbd>Recoding_metas.csv</kbd>
+6. <kbd>Recoding_metas.csv</kbd>  
+This file records some information related to data collection.  
+<table>
+  <tr>
+    <td>Column</td>
+    <td>RecordingID</td>
+    <td>City</td>
+    <td>Record weekday</td>
+    <td>Record time period</td>
+    <td>Weather</td>
+    <td>Raw frame rate</td>
+    <td>Record duration</td>
+    <td>Tps_num</td>
+    <td>number of categories</td>
+  </tr>
+  <tr>
+    <td>Unit</td>
+    <td>[-]</td>
+    <td>[-]</td>
+    <td>[-]</td>
+    <td>[-]</td>
+    <td>[-]</td>
+    <td>[Hz]</td>
+    <td>[s]</td>
+    <td>[-]</td>
+    <td>[-]</td>
+  </tr>
+</table>
 - RecordingID: the record's number among all records	
 - City: The city where the data is located. Only `Tianjin` is in this dataset.	
 - Record weekday: The weekday on which the data was collected.	
