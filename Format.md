@@ -31,7 +31,7 @@ This file records the time-dependent vehicle trajectory and motion state paramet
 
 2. <kbd>Ped_smoothed_tracks.csv</kbd>  
 Similar format to <kbd>Veh_smoothed_tracks.csv</kbd>, but pedestrians are treated as points without scale and orientation.
-- track_id:the id number of the pedestrain in this record		P1,P2,...,Pn
+- track_id:the id number of the pedestrain in this record		`P1,P2,...,Pn`
 - frame_id:	
 - timestamp_ms:	
 - agent_type: pedestrain	
