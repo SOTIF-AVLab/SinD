@@ -109,11 +109,11 @@ This file records some information related to data collection.
 </table>  
 
 - RecordingID: the record's number among all records	
-- City: The city where the data is located. Only `Tianjin` is in this dataset.	
+- City: The city where the data is located. Only `Tianjin` is in all records of  SIND.	
 - Record weekday: The weekday on which the data was collected.	
 - Record time period: This record corresponds to a specific time period, accurate to the hour.	
 - Weather:Sunny, cloudy, or after rain.	
-- Raw frame rate: 29.97 	
+- Raw frame rate: Fixed at 29.97hz
 - Record duration:Total duration of the record(Unit: second). 	
 - Tps_num: Total number of traffic participants in this record 	
 - number of categories(car, truck, bus, bicycle, motorcycle, tricycle, pedestrian):The number of traffic participants in each category in this record
