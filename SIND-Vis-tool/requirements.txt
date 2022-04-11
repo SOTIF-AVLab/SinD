@@ -1,0 +1,12 @@
+#### to work with the map
+pyproj
+###### not that we encourage to use lanelet2 instead,
+###### see https://github.com/fzi-forschungszentrum-informatik/Lanelet2 for details
+pandas>=0.23.3
+loguru>=0.2.5
+numpy
+matplotlib
+scikit-image
+
+
+
