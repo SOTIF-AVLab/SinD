@@ -17,5 +17,5 @@ For detailed format see [Format.md](Format.md#sdd)
 ## Acknowledgements
 
 Our visualization code is built upon the public code of the following papers:
-* [ The ind dataset: A drone dataset of naturalistic road user trajectories at german intersections, IV'2020](https://github.com/CHENGY12/CausalHTP)
-* [Constructing a Highly Interactive Vehicle Motion Dataset, IROS'2019](https://github.com/HarshayuGirase/Human-Path-Prediction)
+* [ The ind dataset: A drone dataset of naturalistic road user trajectories at german intersections, IV'2020](https://github.com/ika-rwth-aachen/drone-dataset-tools)
+* [Constructing a Highly Interactive Vehicle Motion Dataset, IROS'2019](https://github.com/interaction-dataset/interaction-dataset)
