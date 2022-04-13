@@ -2,12 +2,15 @@
 
 <p align="center">
   <img src="doc/logo.png">
-</p>
+</p>  
+
 We provide a python program to import and visualize the sind data set to make it easy to observe!  
+
 ## Installation
 The package required for the program to run is shown in the `requirements.txt` file, and you can install them by：`pip3 install -r requirements.txt`  
 This Track Visualizer is tested with Python 3.6 and 3.8 but is very probably compatible with newer or slightly older releases.  
 In addition to this, we recommend installing the [lanelet2](https://github.com/fzi-forschungszentrum-informatik/Lanelet2) module, which provides a convenient HD map API, and allows better visualization and ease of use of map information.  
+
 ## Usage
 * copy/download the INTERACTION dataset into the right place
   * copy/download the track files into the folder `data`, keep one folder per record, as in your download
