@@ -3,30 +3,25 @@
 <p align="center">
   <img src="doc/logo.png">
 </p>
-
-The goal of this repo is to make the [inD dataset](https://www.ind-dataset.com/) as easy to use as possible. For this purpose we provide source code 
-in Python, which allows the import and visualization of the dataset. 
-
-## TL;DR
-1. Install required packages e.g. by `pip3 install -r requirements.txt`.
-2. Copy the csv files of the inD dataset into the `data` subdirectory.
-3. Run `python3 run_track_visualization.py --recording_name 01` from the `src` directory.
-
+We provide a python program to import and visualize the sind data set to make it easy to observe!
 ## Installation
-This Track Visualizer is tested with Python 3.6 but is very probably compatible with newer or slightly older releases.
-See `requirements.txt` for the python modules that are used. You can use `pip3 install -r requirements.txt` to install 
-the requirements directly with pip. 
+The package required for the program to run is shown in the `requirements.txt` file, and you can install them by：`pip3 install -r requirements.txt`  
+This Track Visualizer is tested with Python 3.6 and 3.8 but is very probably compatible with newer or slightly older releases.  
+In addition to this, we recommend installing the [lanelet2](https://github.com/fzi-forschungszentrum-informatik/Lanelet2) module, which provides a convenient HD map API, and allows better visualization and ease of use of map information.
+## Usage
+* copy/download the INTERACTION dataset into the right place
+  * copy/download the track files into the folder `data`, keep one folder per record, as in your download
+  * your folder structure should look like in [folder-structure.md](doc/folder-structure.md)
+* to visualize the data
+  * run `./VisMain.py <data_path (default= ../data)> <record_name (default= 8_02_1)>` from this folder directory to visualize the recorded data. 
 
 ## Module Description
-### `tracks_import.py`
-This module allows to import either the tracks, static track info and recording meta info for a single recording or for 
-all recordings by calling `read_from_csv(track_file, static_tracks_file, recordings_meta_file)` 
-and `read_all_recordings_from_csv(base_path)`.
+### `DataReader.py`
+This module allows to read either the tracks, static track info, traffic light states and recording meta info by respective function, and by calling `read_tracks_all(path)` to read a total recording info. 
 
-### `run_track_visualization.py`
-This module uses the `track_visualizer` to create a gui to playback the provided recordings. Besides a visualization of 
-the tracks, a click on a displayed text box of an track creates plots of the most important information. The script has 
-many different parameters, which are listed and explained in the `run_track_visualization.py` file itself. The most 
+### `VisMain.py`
+This module uses the `intersection_visualizer.py` to create a gui to playback the provided recordings. In the visualization, traffic participants (vehicles and pedestrians) are presented as rectangular boxes. By clicking a rectangular box with the mouse, multiple graphs showing the changes of the parameters corresponding to the motion state of the traffic participants can pop up. 
+The script has many different parameters, which are listed and explained in the `VisMain.py` file itself. The most 
 important parameter is the `recording_name`, which specifies the recording to be loaded. 
 
 ![alt text](doc/screenshot_track_visualization.jpg "Screenshot of track visualization")
