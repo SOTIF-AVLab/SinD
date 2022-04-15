@@ -12,7 +12,7 @@ This Track Visualizer is tested with Python 3.6 and 3.8 but is very probably com
 In addition to this, we recommend installing the [lanelet2](https://github.com/fzi-forschungszentrum-informatik/Lanelet2) module, which provides a convenient HD map API, and allows better visualization and ease of use of map information.  
 
 ## Usage
-* copy/download the INTERACTION dataset into the right place
+* copy/download the SIND dataset into the right place
   * copy/download the track files into the folder `data`, keep one folder per record, as in your download
   * your folder structure should look like in [folder-structure.md](doc/folder-structure.md)
 * to visualize the data
