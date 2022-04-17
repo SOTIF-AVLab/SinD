@@ -15,12 +15,12 @@ SIND contains 7 hours of recording including over 13,000 traffic participants wi
 ##  Access
 You can get the project and a sample record by executing `git clone https://github.com/SOTIF-AVLab/SinD.git`. To access the full dataset visit our [Official-website](http://www.scstsv.tech/home)
 
-## Description of format
+## Description of Format
 
 SIND consists of 23 records, each of which contains 8-22 minutes of trajectories of traffic participants. In addition to the trajectories and motion state parameters of traffic participants, SIND also provides synchronized traffic light states and HD map. Each record contains the following <kbd>.csv</kbd> files:
 For detailed format see [Format.md](Format.md#sdd)  
 
-## visualization  
+## Visualization  
 For visualization see [SIND-Vis-tool](https://github.com/SOTIF-AVLab/SinD/tree/main/SIND-Vis-tool)
 
 ## Acknowledgements
