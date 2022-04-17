@@ -1,7 +1,9 @@
 # Format of the SIND dataset
-
+<div align=center>
 <img src="doc/Ground Coordinate System and Traffic Light Distribution.png" width = 800 >  
-Fig.1 Ground Coordinate System and Traffic Lights Distribution 
+</div>  
+
+                                                                                 Fig.1 Ground Coordinate System and Traffic Lights Distribution 
 
 1. <kbd>Veh_smoothed_tracks.csv</kbd>  
 This file records the time-dependent vehicle trajectory and motion state parameters:
@@ -118,8 +120,10 @@ This file records some information related to data collection.
 - Tps_num: Total number of traffic participants in this record 	
 - number of categories(car, truck, bus, bicycle, motorcycle, tricycle, pedestrian):The number of traffic participants in each category in this record
 ***
-In addition to the record file, we also provide a [high-definition map](Data_example/mapfile.osm#sdd) of the intersection in [Lanelet2](https://github.com/fzi-forschungszentrum-informatik/Lanelet2) format\(see Fig.2\), the origin of the map coincides with the origin of the ground coordinate system.
+In addition to the record file, we also provide a [high-definition map](Data_example/mapfile.osm#sdd) of the intersection in [Lanelet2](https://github.com/fzi-forschungszentrum-informatik/Lanelet2) format\(see Fig.2\), the origin of the map coincides with the origin of the ground coordinate system.  
 
+<div align=center>
 <img src="doc/Lanelet2Map.png" width = 800>  
+</div>  
 
 Fig.2 Semantic HD-map in lanelet2 format
