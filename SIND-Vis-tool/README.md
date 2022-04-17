@@ -14,7 +14,7 @@ In addition to this, we recommend installing the [lanelet2](https://github.com/f
 ## Usage
 * copy/download the SIND dataset into the right place
   * copy/download the track files into the folder `data`, keep one folder per record, as in your download
-  * your folder structure should look like in [folder-structure.md](https://github.com/SOTIF-AVLab/SinD/blob/main/doc/folder-structure.md)
+  * your folder structure should look like in [File-Directory.md](https://github.com/SOTIF-AVLab/SinD/blob/main/doc/File-Directory.md)
 * to visualize the data
   * run `./VisMain.py <data_path (default= ../data)> <record_name (default= 8_02_1)>` from this folder directory to visualize the recorded data. 
 
