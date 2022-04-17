@@ -1,6 +1,6 @@
 # SIND
 ## Introduction
-A key challenging scenario for autonomous driving is intersections, but there are currently no large-scale public trajectory datasets on signalized intersections. Motivated by this, we constructed the SIND dataset, which was collected at a signalized intersection in Tianjin, China. The SIND dataset is based on 4K video captured by drones, providing information including traffic participant trajectories, traffic light status, and high-definition maps.  
+A key challenging scenario for autonomous driving is intersections, but there are currently no large-scale public trajectory datasets on signalized intersections. Motivated by this, we constructed the SIND dataset, which was collected at a signalized intersection in Tianjin, China. The SIND dataset is based on 4K video captured by drones, providing information including traffic participant trajectories, traffic light status, and high-definition maps.  A demo video of the dataset can be viewed [here]()
 
 <div align=center>
 <img src="doc/SIND.jpg" width = 800>
@@ -11,6 +11,9 @@ SIND contains 7 hours of recording including over 13,000 traffic participants wi
 <div align=center>
 <img src="doc/Number and proportion of categories.png" width = 400><img src="doc/veh-traffic light violation.png" width = 400>  
 </div>  
+
+##  Access
+You can get the project and a sample record by executing `git clone https://github.com/SOTIF-AVLab/SinD.git`. To access the full dataset visit our [Official website](http://www.scstsv.tech/home)
 
 ## Description of format
 
