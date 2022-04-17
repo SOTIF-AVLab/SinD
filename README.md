@@ -1,6 +1,6 @@
 # SinD
-
-The SIND dataset is a drone dataset that records signalized intersections,  providing information such as traffic participant trajectories, traffic light status, and high-definition maps.  
+## Introduction
+A key challenging scenario for autonomous driving is intersections, but there are currently no large-scale trajectory datasets on signalized intersections. Motivated by this, we constructed the SIND dataset, which was collected at a signalized intersection in Tianjin, China. The SIND dataset is based on 4K video captured by drones, providing information such as traffic participant trajectories, traffic light status, and high-definition maps.  
 ***
 <img src="doc/logo.png" width = 350>
 
