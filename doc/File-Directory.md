@@ -7,7 +7,7 @@ For every scenario with name `<scenario_name>`, the scripts expect the map with 
 ├── README.md
 ├── Format.md
 ├── doc
-│   ├── folder-structure.md
+│   ├── File-Directory.md
 │   └── ...
 ├── SIND-Vis-tool
 │   ├──utils
