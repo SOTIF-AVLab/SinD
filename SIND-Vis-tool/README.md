@@ -1,8 +1,5 @@
 # SIND Dataset Python Tools
 
-<p align="center">
-  <img src="doc/logo.png">
-</p>  
 
 We provide a python program to import and visualize the sind data set to make it easy to observe!  
 
@@ -27,4 +24,4 @@ This module uses the `intersection_visualizer.py` to create a gui to playback th
 The script has many different parameters, which are listed and explained in the `VisMain.py` file itself. The most 
 important parameter is the `recording_name`, which specifies the recording to be loaded. 
 
-![alt text](doc/screenshot_track_visualization.jpg "Screenshot of track visualization")
+![alt text](doc/Visualization.jpg "Screenshot of track visualization")
