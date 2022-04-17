@@ -6,14 +6,15 @@ SIND contains 7 hours of recording including over 13,000 traffic participants wi
 <div align=center>
 <img src="doc/Number and proportion of categories.png" width = 500><img src="doc/veh-traffic light violation.png" width = 500>  
 </div>  
-
+<div align=center>
+<img src="doc/SIND.jpg">
+</div>  
 ## Our organization
 <img src="doc/logo.png" width = 350>
 
 - School of Vehicle and Mobility, Tsinghua University
 - Tsinghua Intelligent Vehicle Design and Safety Research Institute
 
-<img src="doc/SIND.jpg">
 
 ## Description of format
 
