@@ -3,7 +3,7 @@
 <img src="doc/Ground Coordinate System and Traffic Light Distribution.png" width = 800 >  
 </div>  
 
-                                                                                                                     Fig.1 Ground Coordinate System and Traffic Lights Distribution 
+                                                                                                         Fig.1 Ground Coordinate System and Traffic Lights Distribution 
 
 1. <kbd>Veh_smoothed_tracks.csv</kbd>  
 This file records the time-dependent vehicle trajectory and motion state parameters:
@@ -126,4 +126,4 @@ In addition to the record file, we also provide a [high-definition map](Data_exa
 <img src="doc/Lanelet2Map.png" width = 800>  
 </div>  
 
-                                                                                                                                      Fig.2 Semantic HD-map in lanelet2 format
+                                                                                                                      Fig.2 Semantic HD-map in lanelet2 format
