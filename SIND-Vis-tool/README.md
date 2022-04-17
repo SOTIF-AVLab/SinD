@@ -24,4 +24,7 @@ This module uses the `intersection_visualizer.py` to create a gui to playback th
 The script has many different parameters, which are listed and explained in the `VisMain.py` file itself. The most 
 important parameter is the `recording_name`, which specifies the recording to be loaded. 
 
-![alt text](doc/Visualization.jpg "Screenshot of track visualization")
+<div align=center>
+<img src="doc/Visualization.jpg" width = 400><img src="doc/motion parameters.jpg" width = 400>  
+</div>  
+
