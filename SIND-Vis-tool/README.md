@@ -25,6 +25,6 @@ The script has many different parameters, which are listed and explained in the 
 important parameter is the `recording_name`, which specifies the recording to be loaded. 
 
 <div align=center>
-<img src="doc/Visualization.jpg" width = 400><img src="doc/motion parameters.jpg" width = 400>  
+<img src="https://github.com/SOTIF-AVLab/SinD/blob/main/doc/Visualization.jpg" width = 400><img src="doc/motion parameters.jpg" width = 400>  
 </div>  
 
