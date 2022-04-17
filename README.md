@@ -9,6 +9,7 @@ SIND contains 7 hours of recording including over 13,000 traffic participants wi
 <div align=center>
 <img src="doc/SIND.jpg">
 </div>  
+
 ## Our organization
 <img src="doc/logo.png" width = 350>
 
