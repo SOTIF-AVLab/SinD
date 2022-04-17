@@ -4,8 +4,7 @@ A key challenging scenario for autonomous driving is intersections, but there ar
 ## Basic Statistics
 SIND contains 7 hours of recording including over 13,000 traffic participants with 7 types,  HD maps and traffic light information are used to count traffic light violations by vehicles in them.
 <figure class="half">
-    <img src="doc/Number and proportion of categories.png" width = 350>
-    <img src="doc/veh-traffic light violation.png" width = 350>
+    <img src="doc/Number and proportion of categories.png" width = 350><img src="doc/veh-traffic light violation.png" width = 350>
 </figure>
 ## Our organization
 <img src="doc/logo.png" width = 350>
