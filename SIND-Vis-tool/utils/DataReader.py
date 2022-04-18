@@ -55,7 +55,7 @@ def read_tracks_all(path):
 
 def read_light(path, maxframe):
 
-    df_light = pd.read_csv(path, sep=';')
+    df_light = pd.read_csv(path)
     light_dict = {}
     memory = 0
     frame = 0
