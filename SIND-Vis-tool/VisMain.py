@@ -5,7 +5,7 @@ from intersection_visualizer import Visualizer
 def args_parser():
     configs = argparse.ArgumentParser(description='')
 
-    configs.add_argument('--path', default="../data/",
+    configs.add_argument('--path', default="../Data/",
                          help="Dir with track files", type=str)
     configs.add_argument('--record_name', default="8_02_1",
                          help="Dir with track files", type=str)
