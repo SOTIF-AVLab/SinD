@@ -27,6 +27,6 @@ For every scenario with name `<scenario_name>`, the scripts expect the map with 
        │   ├── Veh_smoothed_tracks.csv
        │   ├── Veh_tracks_meta.csv
        │   └──recoding_metas.csv
-       └──mapfile.osm
+       └──mapfile-Tianjin.osm
 
 ```
