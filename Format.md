@@ -120,7 +120,7 @@ This file records some information related to data collection.
 - Tps_num: Total number of traffic participants in this record 	
 - number of categories(car, truck, bus, bicycle, motorcycle, tricycle, pedestrian):The number of traffic participants in each category in this record
 ***
-In addition to the record file, we also provide a [high-definition map](Data_example/mapfile.osm#sdd) of the intersection in [Lanelet2](https://github.com/fzi-forschungszentrum-informatik/Lanelet2) format\(see Fig.2\), the origin of the map coincides with the origin of the ground coordinate system.  
+In addition to the record file, we also provide a [high-definition map](Data/mapfile-Tianjin.osm#sdd) of the intersection in [Lanelet2](https://github.com/fzi-forschungszentrum-informatik/Lanelet2) format\(see Fig.2\), the origin of the map coincides with the origin of the ground coordinate system.  
 
 <div align=center>
 <img src="doc/Lanelet2Map.png" width = 800>  
