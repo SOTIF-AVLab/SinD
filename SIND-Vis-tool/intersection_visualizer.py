@@ -44,7 +44,7 @@ class Visualizer(object):
                                   self.maximum_frames)
 
 
-        traffic_light_path = glob.glob(datapath+'/TraficLight*.csv')[0]
+        traffic_light_path = glob.glob(datapath+'/TrafficLight*.csv')[0]
         self.map_path = glob.glob(self.config['path']+'/*.osm')[0]
 
         if self.config['plot_traffic_light']:
