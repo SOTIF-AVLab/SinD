@@ -2,12 +2,6 @@ import pandas as pd
 import os
 import numpy as np
 
-'''
-数据类型:车辆轨迹——对象  
-python中字典比类效率更高
-
-
-'''
 
 def read_tracks_all(path):
 
@@ -61,9 +55,7 @@ def read_tracks_all(path):
 
 def read_light(path, maxframe):
 
-    df_light = pd.read_excel(path)
-    # del df_light['toaltimestamp']
-    # print(df_light)
+    df_light = pd.read_csv(path, sep=';')
     light_dict = {}
     memory = 0
     frame = 0
