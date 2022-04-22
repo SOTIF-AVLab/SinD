@@ -3,7 +3,7 @@
 <img src="doc/Ground Coordinate System and Traffic Light Distribution.png" width = 800 >  
 </div>  
 
-                                            Fig.1 Ground Coordinate System and Traffic Lights Distribution 
+                                              Fig.1 Ground Coordinate System and Traffic Lights Distribution 
 
 1. <kbd>Veh_smoothed_tracks.csv</kbd>  
 This file records the time-dependent vehicle trajectory and motion state parameters:
@@ -70,7 +70,7 @@ The behavior of pedestrians is not easy to describe, so we do not provide labels
 - class: Only `pedestrain`  
 Other items have the same meaning as the items with the same name in the <kbd>Veh_tracks_meta.csv</kbd> file
 
-5. <kbd>TraficLightStates.csv</kbd>  
+5. <kbd>TrafficLight_[record_name].csv</kbd>  
 This document records the states of traffic lights over time:
 
 |Column| trackId | initialFrame | finalFrame |Frame_nums|  
