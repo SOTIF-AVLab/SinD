@@ -81,7 +81,7 @@ This document records the states of traffic lights over time:
 - Traffic light X(1-8): 0 for red light status, 1 for green light status, 3 for yellow light status; the traffic light position is as shown in the Fig.1.
 
 
-6. <kbd>Recoding_metas.csv</kbd>  
+6. <kbd>Recording_metas.csv</kbd>  
 This file records some information related to data collection.  
 <table>
   <tr>
