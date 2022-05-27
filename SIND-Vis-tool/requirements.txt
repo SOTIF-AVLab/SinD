@@ -5,7 +5,7 @@ pyproj
 pandas>=0.23.3
 loguru>=0.2.5
 numpy
-matplotlib
+matplotlib==3.3.2
 scikit-image
 
 
