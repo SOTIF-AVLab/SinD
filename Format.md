@@ -73,10 +73,10 @@ Other items have the same meaning as the items with the same name in the <kbd>Ve
 5. <kbd>TrafficLight_[record_name].csv</kbd>  
 This document records the states of traffic lights over time:
 
-|Column|FrameID| timestamp(ms) | Traffic light X|  
+|Column|RawFrameID| timestamp(ms) | Traffic light X|  
 | ---- |  ----  | ----  | ----  |   
 |Unit| [-] |[ms] | [0,1,3]|  
-- FrameID: The original frame Id corresponding to the moment when the state of the traffic light changes(The raw frame corresponding to the data frame: `Frame * 3 = FrameID`) 
+- FrameID: The original frame Id corresponding to the moment when the state of the traffic light changes(The raw frame corresponding to the data frame: `Frame * 3 = RawFrameID`) 
 - timestamp（ms）:	The moment when the state of the traffic light changes 
 - Traffic light X(1-8): 0 for red light status, 1 for green light status, 3 for yellow light status; the traffic light position is as shown in the Fig.1.
 
