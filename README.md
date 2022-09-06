@@ -38,3 +38,8 @@ Our visualization code is built upon the public code of the following papers:
 - School of Vehicle and Mobility, Tsinghua University
 - Tsinghua Intelligent Vehicle Design and Safety Research Institute
 - Safety Of The Intended Functionality（SOTIF） Research Team
+
+## Update log
+
+- 2022.9.6: Fixed some minor errors. 1.Fixed category: pedestrian 2. Added missing part of traffic light information of 8/_5/_1 
+
