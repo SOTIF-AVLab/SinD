@@ -55,7 +55,7 @@ class Visualizer(object):
 
         self.colors = {'car': 'dodgerblue', 'bicycle': 'green', 'motorcycle': 'orange', 'bus': 'turquoise',
                        'truck': 'yellow', 'tricycle'
-                       : 'hotpink', 'pedestrain': 'red'}
+                       : 'hotpink', 'pedestrian': 'red'}
         # Save ids for each frame
         self.ids_for_frame = {}
         for i_frame in range(self.maximum_frames):  # 清点每一帧各有哪些TP
