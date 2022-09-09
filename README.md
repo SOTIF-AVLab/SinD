@@ -26,7 +26,7 @@ For detailed format see [Format.md](Format.md#sdd)
 For visualization see [SIND-Vis-tool](https://github.com/SOTIF-AVLab/SinD/tree/main/SIND-Vis-tool)
 
 ## Citation  
-If you use SinD or its code in your work, please cite our datasets as follows::
+If you use SinD or its code in your work, please cite our datasets as follows:
 ```
 @misc{https://doi.org/10.48550/arxiv.2209.02297,
   doi = {10.48550/ARXIV.2209.02297},
