@@ -26,6 +26,27 @@ For detailed format see [Format.md](Format.md#sdd)
 ## Visualization  
 For visualization see [SIND-Vis-tool](https://github.com/SOTIF-AVLab/SinD/tree/main/SIND-Vis-tool)
 
+## Citation  
+If you use one of our datasets or these scripts in your work, please cite our datasets as follows:
+```
+@misc{https://doi.org/10.48550/arxiv.2209.02297,
+  doi = {10.48550/ARXIV.2209.02297},
+  
+  url = {https://arxiv.org/abs/2209.02297},
+  
+  author = {Xu, Yanchao and Shao, Wenbo and Li, Jun and Yang, Kai and Wang, Weida and Huang, Hua and Lv, Chen and Wang, Hong},
+  
+  keywords = {Computer Vision and Pattern Recognition (cs.CV), General Literature (cs.GL), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  
+  title = {SIND: A Drone Dataset at Signalized Intersection in China},
+  
+  publisher = {arXiv},
+  
+  year = {2022},
+  
+  copyright = {arXiv.org perpetual, non-exclusive license}
+}
+```  
 ## Acknowledgements
 
 Our visualization code is built upon the public code of the following papers:
