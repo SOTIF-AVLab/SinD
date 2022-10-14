@@ -23,8 +23,11 @@ SIND consists of 23 records, each of which contains 8-22 minutes of trajectories
 For detailed format see [Format.md](Format.md#sdd)  
 
 ## Visualization  
-For visualization see [SIND-Vis-tool](https://github.com/SOTIF-AVLab/SinD/tree/main/SIND-Vis-tool)
+For visualization see [SIND-Vis-tool](https://github.com/SOTIF-AVLab/SinD/tree/main/SIND-Vis-tool)  
 
+## Applications based on this dataset
+The dataset provides a simple traffic light violation label for vehicles. In addition, our team has developed a [method](https://github.com/SOTIF-AVLab/DOTL) to monitor more violations of vehicles  
+<img src="https://github.com/SOTIF-AVLab/DOTL/blob/main/Doc/click%20image.jpg" width = 800>
 ## Citation  
 If you use SinD or its code in your work, please cite our datasets as follows:
 ```
@@ -52,8 +55,7 @@ Our visualization code is built upon the public code of the following papers:
 * [ The ind dataset: A drone dataset of naturalistic road user trajectories at german intersections, IV'2020](https://github.com/ika-rwth-aachen/drone-dataset-tools)
 * [Constructing a Highly Interactive Vehicle Motion Dataset, IROS'2019](https://github.com/interaction-dataset/interaction-dataset)  
 
-## Applications based on this dataset
-The dataset provides a simple traffic light violation label for vehicles. In addition, our team has developed a [method](https://github.com/SOTIF-AVLab/DOTL) to monitor more violations of vehicles  
+
 ## Organization
 <img src="doc/logo.png" width = 350>
 
