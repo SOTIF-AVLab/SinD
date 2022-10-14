@@ -27,7 +27,9 @@ For visualization see [SIND-Vis-tool](https://github.com/SOTIF-AVLab/SinD/tree/m
 
 ## Applications based on this dataset
 The dataset provides a simple traffic light violation label for vehicles. In addition, our team has developed a [method](https://github.com/SOTIF-AVLab/DOTL) to monitor more violations of vehicles  
+<div align=center>
 <img src="https://github.com/SOTIF-AVLab/DOTL/blob/main/Doc/click%20image.jpg" width = 800>
+ </div> 
 ## Citation  
 If you use SinD or its code in your work, please cite our datasets as follows:
 ```
