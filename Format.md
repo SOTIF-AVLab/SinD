@@ -17,9 +17,9 @@ This file records the time-dependent vehicle trajectory and motion state paramet
 - timestamp_ms:	The time corresponding to each data frame
 - agent_type: the specific class to which the vehicle belongs(car, truck, bus, motorcycle, bicycle, tricycle)	
 - x	: The x position of the center of the vehicle bounding box in the ground coordinate system
-- y	: The x position of the center of the vehicle bounding box in the ground coordinate system
+- y	: The y position of the center of the vehicle bounding box in the ground coordinate system
 - vx: The component of the center's velocity in the x-direction	
-- vy: The component of the center's velocity in the x-direction	
+- vy: The component of the center's velocity in the y-direction	
 - yaw_rad : the angle between the direction of the front longitudinal axis of the vehicle and the positive direction of the x-axis	
 - heading_rad: the angle between the moving direction of the center of the vehicle bounding box and the positive x-axis	
 - length: the length of the vehicle	
@@ -39,7 +39,7 @@ Similar format to <kbd>Veh_smoothed_tracks.csv</kbd>, but pedestrians are treate
 |Unit| [-] |[-] | [ms]|[-]|[m]|[m]|[m/s]|[m/s]|[m/s^2]|[m/s^2]|  
 
 - track_id:the id number of the pedestrain in this record		P1,P2,...,Pn
-- agent_type: Only `pedestrain`	  
+- agent_type: Only `pedestrian`	  
 - Other items have the same meaning as the items with the same name in the <kbd>Veh_smoothed_tracks.csv</kbd> file.
 
 3. <kbd>Veh_tracks_meta.csv</kbd>   
