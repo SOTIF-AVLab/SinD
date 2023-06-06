@@ -13,7 +13,7 @@ SIND contains 7 hours of recording including over 13,000 traffic participants wi
 
 ##  Access
 You can get the project and a sample record by executing `git clone https://github.com/SOTIF-AVLab/SinD.git`. To access the full dataset， please contact us by e-mail:
-hong_wang@tsinghua.edu.cn or 18975505069@163.com    
+hong_wang@tsinghua.edu.cn or 13645450063@163.com or 18975505069@163.com     
 * The title of the email should be: __\[Apply for SinD\] name\_country(region)\_organization__    
 Please describe your laboratory or department, research interest, and the purpose of the dataset in detail in the email content; After confirmation, we will send the complete data link as soon as possible(By default, a reply email containing a link will be sent to email address which you contact us). You are also welcome to further communicate with us
 
