@@ -58,3 +58,4 @@ Our visualization code is built upon the public code of the following papers:
 - 2022.9.6: Fixed some minor errors. 1.Fixed category: pedestrian 2. Added missing part of traffic light information of 8\_5\_1 
 - 2022.9.9: Add paper links and citation requirements in the page
 - 2022.10.14: Added item: Application based on this dataset
+- 2024.1.1: Update the map file: Fixed errors and used arcs to connect lanes
