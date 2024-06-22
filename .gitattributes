@@ -1,0 +1,2 @@
+Data/Changchun/changchun_pudong_507_009/Veh_smoothed_tracks.csv filter=lfs diff=lfs merge=lfs -text
+*.csv filter=lfs diff=lfs merge=lfs -text

@@ -1,15 +1,34 @@
 # SIND
 ## Introduction
-A key challenging scenario for autonomous driving is intersections, but there are currently no large-scale public trajectory datasets on signalized intersections. Motivated by this, we constructed the SIND dataset, which was collected at a signalized intersection in Tianjin, China. The SIND dataset is based on 4K video captured by drones, providing information including traffic participant trajectories, traffic light status, and high-definition maps.  A demo video of the dataset can be viewed on [Youtube](https://youtu.be/H9QSGqioYww) or [BiliBili](https://www.bilibili.com/video/BV1wN4y1F7Sc?share_source=copy_web&vd_source=07ce0c26f3e74d7ba5041a25df0072be).  The corresponding [paper](https://arxiv.org/abs/2209.02297) has been accepted by 2022 IEEE Conference on Intelligent Transportation Systems (ITSC 2022).
-<div align=center>
-<img src="doc/SIND.jpg" width = 800>
-</div>   
+A key challenging scenario for autonomous driving is intersections, but there are currently no large-scale public trajectory datasets on signalized intersections. Motivated by this,  we constructed the SIND dataset, which is based on 4K videos captured by drones and provides information including traffic participant trajectories, traffic light status, and high-definition maps. As of now, we have collected 15 intersections from multiple cities, of which four have been released, located in Tianjin, Chongqing, Changchun, and Xi'an in China.  A demo video of the dataset can be viewed on [Youtube](https://youtu.be/H9QSGqioYww) or [BiliBili](https://www.bilibili.com/video/BV1wN4y1F7Sc?share_source=copy_web&vd_source=07ce0c26f3e74d7ba5041a25df0072be).  The corresponding [paper](https://arxiv.org/abs/2209.02297) has been accepted by 2022 IEEE Conference on Intelligent Transportation Systems (ITSC 2022).
 
-## Basic Statistics
-SIND contains 7 hours of recording including over 13,000 traffic participants with 7 types,  HD maps and traffic light information are used to count traffic light violations by vehicles in them.  Clearly, SIND has a high proportion of vulnerable road users and frequent non-motor vehicle violations.  
+## Data Subset
+### SIND_Tianjin
+<div align=center>
+<img src="doc/Tianjin.jpg" width = 600>
+</div>   
+SIND_Tianjin contains 7 hours of recording including over 13,000 traffic participants with 7 types,  HD maps and traffic light information are used to count traffic light violations by vehicles in them.  Clearly, SIND_Tianjin has a high proportion of vulnerable road users and frequent non-motor vehicle violations.  
 <div align=center>
 <img src="doc/Number and proportion of categories.png" width = 400><img src="doc/veh-traffic light violation.png" width = 400>  
 </div>  
+
+### SIND_Chongqing
+<div align=center>
+<img src="doc/Chongqing.jpg" width = 400><img src="doc/SinD_Chongqing.png" width = 400>  
+</div>     
+Sind_Chongqing was collected at an intersection in Chongqing, where the traffic density was low and the freedom of traffic participants was high; Compared to the situation where pedestrians and vehicles share traffic lights in Sind_Tianjin, Sind_Chongqing have independent vehicle traffic lights and pedestrian traffic lights. However, for vehicles, the conflict between turning left and going straight is still normal.
+
+### SIND_Changchun
+<div align=center>
+<img src="doc/Changchun.jpg" width = 400><img src="doc/SinD_Changchun.png" width = 400>  
+</div>   
+SinD_Changchun is an intersection located on a traffic artery with a high traffic density in Changchun. In this dataset, dense unprotected left turn conflicts can be observed, and even conflicting traffic congestion occurs when a green wave of traffic cannot completely pass through the intersection.
+
+### SIND_Xi'an
+<div align=center>
+<img src="doc/Xi'an.jpg" width = 400><img src="doc/SinD_Xi'an.png" width = 400>  
+</div>   
+SinD_Xi'an was collected at an intersection with moderate traffic density in Xi'an City, mainly consisting of vehicles; Similar to SinD-Tianjin, it has a shared traffic signal for pedestrians and vehicles, and there are conflicts between left turns and straight traffic.
 
 ##  Access
 You can get the project and a sample record by executing `git clone https://github.com/SOTIF-AVLab/SinD.git`. To access the full dataset， please contact us by e-mail:
@@ -19,7 +38,7 @@ Please describe your laboratory or department, research interest, and the purpos
 
 ## Description of Format
 
-SIND consists of 23 records, each of which contains 8-22 minutes of trajectories of traffic participants. In addition to the trajectories and motion state parameters of traffic participants, SIND also provides synchronized traffic light states and HD map. Each record contains the following <kbd>.csv</kbd> files:
+Currently, SinD consists of 4 cities with several records, each record contains 8-22 minutes of trajectories of traffic participants. In addition to the trajectories and motion state parameters of traffic participants, SIND also provides synchronized traffic light states and lanelet2 map. Each record contains the following <kbd>.csv</kbd> files:
 For detailed format see [Format.md](Format.md#sdd)  
 
 ## Visualization  
@@ -59,3 +78,4 @@ Our visualization code is built upon the public code of the following papers:
 - 2022.9.9: Add paper links and citation requirements in the page
 - 2022.10.14: Added item: Application based on this dataset
 - 2024.1.1: Update the map file: Fixed errors and used arcs to connect lanes
+- 2024.6.23: Major update, updated introduction, sample data, and schematic diagram of three newly collected intersections
