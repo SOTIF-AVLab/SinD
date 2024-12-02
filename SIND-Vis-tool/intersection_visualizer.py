@@ -454,7 +454,7 @@ class Visualizer(object):
         for track_id in self.ids_for_frame[self.current_frame]["veh"]:
             # object is visible
             frame_id = self.current_frame - self.veh_tracks_meta[track_id]['initialFrame']
-            value = self.VehTracks[track_id]
+            value = self.VehTracks[(track_id, )]
             bbox = value['bbox'][frame_id, :, :]
             tri = value['triangle'][frame_id, :, :]
             if track_id not in self.plot_objs['veh']:
@@ -533,7 +533,7 @@ class Visualizer(object):
         for track_id in self.ids_for_frame[self.current_frame]["ped"]:
 
             frame_id = self.current_frame - self.ped_tracks_meta[track_id]['initialFrame']
-            value = self.PedTracks[track_id]
+            value = self.PedTracks[(track_id, )]
             bbox = value['bbox'][frame_id, :, :]
             if track_id not in self.plot_objs['ped']:
                 color = self.colors[value["agent_type"]]
