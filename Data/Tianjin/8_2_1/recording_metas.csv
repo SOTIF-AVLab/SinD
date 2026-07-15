@@ -1,2 +1,3 @@
-RecordingID,City,Record weekday,Record time period,Weather,Raw frame rate,Record duration,Tps_num,car,truck,bus,bicycle,motorcycle,tricycle,pedestrian
-1,Tianjin,Monday,9:00-10:00,sunny,29.97,1201.6s,677,268,4,4,131,171,33,66
+version https://git-lfs.github.com/spec/v1
+oid sha256:a566e05b024a54f1818461e8f02cb90907652f255cf84229300ecfc1f8abdc22
+size 225

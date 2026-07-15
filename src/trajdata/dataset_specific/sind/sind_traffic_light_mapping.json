@@ -1,0 +1,333 @@
+{
+  "version": 1,
+  "description": "Optional SinD traffic-light-to-lane mapping. Empty mappings preserve raw signal IDs as synthetic trajdata lane_id keys until each intersection is manually aligned from the PNG diagrams and maps.",
+  "locations": {
+    "cc": {
+      "raw_folder": "Changchun_Pudong",
+      "light_to_lanes": {
+        "vehicle:1": [
+          "N_EX_1_to_E_EN_1",
+          "N_EX_1_to_S_EN_1",
+          "N_EX_2_to_S_EN_2",
+          "N_ex_1",
+          "N_ex_2",
+          "S_EX_1_to_N_EN_1",
+          "S_EX_1_to_W_EN_1",
+          "S_EX_2_to_N_EN_2",
+          "S_EX_3_to_N_EN_3",
+          "S_ex_1",
+          "S_ex_2",
+          "S_ex_3"
+        ],
+        "vehicle:2": [
+          "E_EX_1_to_S_EN_1",
+          "E_EX_1_to_W_EN_1",
+          "E_EX_2_to_W_EN_2",
+          "E_ex_1",
+          "E_ex_2",
+          "W_EX_1_to_E_EN_1",
+          "W_EX_1_to_N_EN_1",
+          "W_EX_2_to_E_EN_2",
+          "W_ex_1",
+          "W_ex_2"
+        ]
+      },
+      "scenes": {}
+    },
+    "xa": {
+      "raw_folder": "Xi'an_shanglin",
+      "light_to_lanes": {},
+      "scenes": {}
+    },
+    "xasl": {
+      "raw_folder": "Xi'an_shanglin",
+      "light_to_lanes": {
+        "general:1": [
+          "N_EX_1_to_E_EN_1",
+          "N_EX_2_to_S_EN_2",
+          "N_EX_3_to_S_EN_3",
+          "N_EX_4_to_S_EN_4",
+          "N_ex_1",
+          "N_ex_2",
+          "N_ex_3",
+          "N_ex_4",
+          "S_EX_1_to_W_EN_1",
+          "S_EX_2_to_N_EN_2",
+          "S_EX_3_to_N_EN_3",
+          "S_EX_4_to_N_EN_4",
+          "S_ex_1",
+          "S_ex_2",
+          "S_ex_3",
+          "S_ex_4"
+        ],
+        "general:2": [
+          "E_EX_1_to_S_EN_1",
+          "E_EX_1_to_W_EN_1",
+          "E_EX_2_to_W_EN_2",
+          "E_EX_3_to_W_EN_3",
+          "E_ex_1",
+          "E_ex_2",
+          "E_ex_3",
+          "W_EX_1_to_E_EN_1",
+          "W_EX_1_to_N_EN_1",
+          "W_EX_2_to_E_EN_2",
+          "W_EX_3_to_E_EN_3",
+          "W_ex_1",
+          "W_ex_2",
+          "W_ex_3"
+        ]
+      },
+      "scenes": {}
+    },
+    "tj": {
+      "raw_folder": "tianjin",
+      "light_to_lanes": {
+        "general:8": [],
+        "general:5": [
+          "R4In1",
+          "R4In2",
+          "S_EX_1_to_N_EN_1",
+          "S_EX_1_to_W_EN_1",
+          "S_EX_2_to_N_EN_2",
+          "S_EX_2_to_W_EN_3",
+          "S_EX_to_W_EN",
+          "S_ex_1:gap",
+          "S_ex_2:gap"
+        ],
+        "general:7": [
+          "E_EX_1_to_S_EN_1",
+          "E_EX_1_to_W_EN_1",
+          "E_EX_2_to_W_EN_2",
+          "E_EX_3_to_S_EN_2",
+          "E_EX_3_to_W_EN_3",
+          "E_EX_to_S_EN",
+          "E_ex_1:gap",
+          "E_ex_2:gap",
+          "E_ex_3:gap",
+          "R1In1",
+          "R1In2",
+          "R1In3"
+        ],
+        "general:1": [
+          "N_EX_1_to_E_EN_1",
+          "N_EX_1_to_S_EN_1",
+          "N_EX_2_to_E_EN_3",
+          "N_EX_2_to_S_EN_2",
+          "N_EX_to_E_EN",
+          "N_ex_1:gap",
+          "N_ex_2:gap",
+          "R2In1",
+          "R2In2"
+        ],
+        "general:3": [
+          "R3In1",
+          "R3In2",
+          "R3In3",
+          "W_EX_1_to_E_EN_1",
+          "W_EX_1_to_N_EN_1",
+          "W_EX_2_to_E_EN_2",
+          "W_EX_3_to_E_EN_3",
+          "W_EX_3_to_N_EN_2",
+          "W_EX_to_N_EN",
+          "W_ex_1:gap",
+          "W_ex_2:gap",
+          "W_ex_3:gap"
+        ]
+      },
+      "scenes": {}
+    },
+    "cqNR": {
+      "raw_folder": "Chongqing_NR",
+      "light_to_lanes": {
+        "vehicle:1": [
+          "R4In1",
+          "R4In1:gap",
+          "R4In1_to_R3Out1",
+          "R4In2",
+          "R4In2:gap",
+          "R4In2_to_R2Out1",
+          "R4In3",
+          "R4In3:gap",
+          "R4In3_to_R2Out2"
+        ],
+        "vehicle:2": [
+          "R3In1",
+          "R3In1_to_R2Out1",
+          "R3In2",
+          "R3In2_to_R1Out1",
+          "R3In3",
+          "R3In3:gap",
+          "R3In3_to_R1Out2"
+        ],
+        "vehicle:3": [
+          "R2In1",
+          "R2In1_to_R1Out1",
+          "R2In2",
+          "R2In2_to_R4Out1",
+          "R2In3",
+          "R2In3:gap",
+          "R2In3_to_R4Out2"
+        ],
+        "vehicle:4": [
+          "R1In1",
+          "R1In1_to_R4Out1",
+          "R1In2",
+          "R1In2_to_R3Out1",
+          "R1In3",
+          "R1In3:gap",
+          "R1In3_to_R3Out2"
+        ],
+        "pedestrian:1": [
+          "E_crosswalk"
+        ],
+        "pedestrian:2": [
+          "N_crosswalk"
+        ],
+        "pedestrian:3": [
+          "W_crosswalk"
+        ],
+        "pedestrian:4": [
+          "S_crosswalk"
+        ]
+      },
+      "scenes": {}
+    },
+    "cqIR": {
+      "raw_folder": "Chongqing_IR",
+      "light_to_lanes": {
+        "pedestrian:1": [
+          "S_crosswalk"
+        ],
+        "pedestrian:2": [
+          "W_crosswalk"
+        ],
+        "pedestrian:3": [
+          "N_crosswalk"
+        ],
+        "vehicle:5": [
+          "R4In1",
+          "S_EX_1_to_W_EN_1",
+          "S_EX_1_to_W_EN_2",
+          "S_ex_1:gap"
+        ],
+        "vehicle:6": [
+          "R4In2",
+          "S_EX_2_to_N_EN_1",
+          "S_EX_2_to_N_EN_2",
+          "S_ex_2:gap"
+        ],
+        "vehicle:3": [
+          "E_EX_1_to_S_EN_1",
+          "E_EX_1_to_S_EN_2",
+          "E_ex_1:gap",
+          "R1In1"
+        ],
+        "vehicle:4": [
+          "E_EX_2_to_W_EN_1",
+          "E_EX_2_to_W_EN_2",
+          "R1In2"
+        ],
+        "vehicle:1": [
+          "N_EX_1_to_E_EN_1",
+          "N_EX_1_to_E_EN_2",
+          "N_ex_1:gap",
+          "R2In1"
+        ],
+        "vehicle:2": [
+          "N_EX_2_to_S_EN_1",
+          "N_EX_2_to_S_EN_2",
+          "N_ex_2:gap",
+          "R2In2"
+        ],
+        "vehicle:7": [
+          "R3In1",
+          "W_EX_1_to_N_EN_1",
+          "W_EX_1_to_N_EN_2",
+          "W_ex_1:gap"
+        ],
+        "vehicle:8": [
+          "R3In1",
+          "R3In2",
+          "W_EX_1_to_E_EN_1",
+          "W_EX_2_to_E_EN_2",
+          "W_ex_1:gap",
+          "W_ex_2:gap"
+        ],
+        "pedestrian:4": [
+          "E_crosswalk"
+        ]
+      },
+      "scenes": {}
+    },
+    "cqR": {
+      "raw_folder": "Chongqing_R",
+      "light_to_lanes": {
+        "vehicle:8": [
+          "R4In2",
+          "R4In3",
+          "S_EX_2_to_N_EN_1",
+          "S_EX_3_to_N_EN_2",
+          "S_ex_2:gap",
+          "S_ex_3:gap"
+        ],
+        "vehicle:7": [
+          "R4In1",
+          "S_EX_1_to_W_EN_1",
+          "S_EX_1_to_W_EN_2",
+          "S_ex_1:gap"
+        ],
+        "vehicle:6": [
+          "E_EX_2_to_W_EN_1",
+          "E_EX_2_to_W_EN_2",
+          "E_EX_3_to_W_EN_3",
+          "E_ex_2:gap",
+          "R1In2",
+          "R1In3"
+        ],
+        "vehicle:5": [
+          "E_EX_1_to_S_EN_1",
+          "E_EX_2_to_S_EN_2",
+          "E_ex_1:gap",
+          "R1In1"
+        ],
+        "vehicle:4": [
+          "N_EX_2_to_S_EN_1",
+          "N_EX_2_to_S_EN_2",
+          "N_ex_2:gap",
+          "N_ex_3:gap",
+          "R2In2",
+          "R2In3"
+        ],
+        "vehicle:3": [
+          "N_EX_1_to_E_EN_1",
+          "N_EX_1_to_E_EN_2",
+          "N_ex_1:gap"
+        ],
+        "vehicle:2": [
+          "R3Out2",
+          "R3Out3",
+          "W_EX_2_to_E_EN_1",
+          "W_EX_3_to_E_EN_2"
+        ],
+        "vehicle:1": [
+          "R3Out1",
+          "W_EX_1_to_N_EN_1",
+          "W_EX_1_to_N_EN_2"
+        ],
+        "pedestrian:1": [
+          "E_crosswalk"
+        ],
+        "pedestrian:2": [
+          "S_crosswalk"
+        ],
+        "pedestrian:3": [
+          "W_crosswalk"
+        ],
+        "pedestrian:4": [
+          "N_crosswalk"
+        ]
+      },
+      "scenes": {}
+    }
+  }
+}

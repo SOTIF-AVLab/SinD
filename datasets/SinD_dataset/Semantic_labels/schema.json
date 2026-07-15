@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SinD Semantic Scenario Labels",
+  "type": "object",
+  "required": ["schema_version", "dataset", "scenarios"],
+  "properties": {
+    "schema_version": { "type": "string" },
+    "dataset": { "const": "sind" },
+    "scenarios": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "scenario_id",
+          "dataset",
+          "location",
+          "source_scene_name",
+          "scene_index",
+          "time_window",
+          "agents",
+          "semantic_tags",
+          "semantics",
+          "source"
+        ],
+        "properties": {
+          "scenario_id": { "type": "string" },
+          "dataset": { "const": "sind" },
+          "location": { "type": "string" },
+          "source_scene_name": { "type": "string" },
+          "scene_index": { "type": "integer", "minimum": 0 },
+          "time_window": {
+            "type": "object",
+            "required": ["start_frame", "end_frame", "duration_sec"],
+            "properties": {
+              "start_frame": { "type": "integer", "minimum": 0 },
+              "end_frame": { "type": "integer", "minimum": 0 },
+              "duration_sec": { "type": "number", "minimum": 0 }
+            }
+          },
+          "agents": {
+            "type": "object",
+            "required": ["ego_id"],
+            "additionalProperties": { "type": ["string", "null"] }
+          },
+          "semantic_tags": {
+            "type": "array",
+            "minItems": 1,
+            "items": { "type": "string" }
+          },
+          "semantics": { "type": "object" },
+          "source": { "type": "object" }
+        }
+      }
+    }
+  }
+}
