@@ -1,0 +1,181 @@
+import unittest
+
+import numpy as np
+import torch
+
+from trajdata.data_structures.state import NP_STATE_TYPES, TORCH_STATE_TYPES
+
+AgentStateArray = NP_STATE_TYPES["x,y,z,xd,yd,xdd,ydd,h"]
+AgentObsArray = NP_STATE_TYPES["x,y,z,xd,yd,xdd,ydd,s,c"]
+AgentStateTensor = TORCH_STATE_TYPES["x,y,z,xd,yd,xdd,ydd,h"]
+AgentObsTensor = TORCH_STATE_TYPES["x,y,z,xd,yd,xdd,ydd,s,c"]
+
+
+class TestStateTensor(unittest.TestCase):
+    def test_construction(self):
+        a = AgentStateTensor(torch.rand(2, 8))
+        b = torch.rand(8).as_subclass(AgentStateTensor)
+        c = AgentObsTensor(torch.rand(5, 9))
+
+    def test_class_propagation(self):
+        a = AgentStateTensor(torch.rand(2, 8))
+        self.assertTrue(isinstance(a.to("cpu"), AgentStateTensor))
+
+        a = AgentStateTensor(torch.rand(2, 8))
+        self.assertTrue(isinstance(a.cpu(), AgentStateTensor))
+
+        b = AgentStateTensor(torch.rand(2, 8))
+        self.assertTrue(isinstance(a + b, AgentStateTensor))
+
+        b = torch.rand(2, 8)
+        self.assertTrue(isinstance(a + b, AgentStateTensor))
+
+        a += 1
+        self.assertTrue(isinstance(a, AgentStateTensor))
+
+    def test_property_access(self):
+        a = AgentStateTensor(torch.rand(2, 8))
+        position = a[..., :3]
+        velocity = a[..., 3:5]
+        acc = a[..., 5:7]
+        h = a[..., 7:]
+
+        self.assertTrue(torch.allclose(a.position3d, position))
+        self.assertTrue(torch.allclose(a.velocity, velocity))
+        self.assertTrue(torch.allclose(a.acceleration, acc))
+        self.assertTrue(torch.allclose(a.heading, h))
+
+    def test_heading_conversion(self):
+        a = AgentStateTensor(torch.rand(2, 8))
+        h = a[..., 7:]
+        hv = a.heading_vector
+        self.assertTrue(torch.allclose(torch.atan2(hv[..., 1], hv[..., 0])[:, None], h))
+
+    def test_long_lat_velocity(self):
+        a = AgentStateTensor(torch.rand(8))
+        velocity = a[3:5]
+        h = a[7]
+        lonlat_v = a.as_format("v_lon,v_lat")
+        lonlat_v_correct = (
+            torch.tensor([[np.cos(h), np.sin(h)], [-np.sin(h), np.cos(h)]])[None, ...]
+            @ velocity[..., None]
+        )[..., 0]
+
+        self.assertTrue(torch.allclose(lonlat_v, lonlat_v_correct))
+
+        b = a.as_format("x,y,xd,yd,s,c")
+        s = b[-2]
+        c = b[-1]
+        lonlat_v = b.as_format("v_lon,v_lat")
+        lonlat_v_correct = (
+            torch.tensor([[c, s], [-s, c]])[None, ...] @ velocity[..., None]
+        )[..., 0]
+
+        self.assertTrue(torch.allclose(lonlat_v, lonlat_v_correct))
+
+    def test_long_lat_conversion(self):
+        a = AgentStateTensor(torch.rand(2, 8))
+        b = a.as_format("xd,yd,h")
+        c = b.as_format("v_lon,v_lat,h")
+        d = c.as_format("xd,yd,h")
+        self.assertTrue(torch.allclose(b, d))
+
+    def test_as_format(self):
+        a = AgentStateTensor(torch.rand(2, 8))
+        b = a.as_format("x,y,z,xd,yd,xdd,ydd,s,c")
+        self.assertTrue(isinstance(b, AgentObsTensor))
+        self.assertTrue(torch.allclose(a, b.as_format(a._format)))
+
+    def test_as_tensor(self):
+        a = AgentStateTensor(torch.rand(2, 8))
+        b = a.as_tensor()
+        self.assertTrue(isinstance(b, torch.Tensor))
+        self.assertFalse(isinstance(b, AgentStateTensor))
+
+    def test_tensor_ops(self):
+        a = AgentStateTensor(torch.rand(2, 8))
+        b = a[0] + a[1]
+        c = torch.mean(b)
+        self.assertFalse(isinstance(c, AgentStateTensor))
+        self.assertTrue(isinstance(c, torch.Tensor))
+
+
+class TestStateArray(unittest.TestCase):
+    def test_construction(self):
+        a = np.random.rand(2, 8).view(AgentStateArray)
+        c = np.random.rand(5, 9).view(AgentObsArray)
+
+    def test_property_access(self):
+        a = np.random.rand(2, 8).view(AgentStateArray)
+        position = a[..., :3]
+        velocity = a[..., 3:5]
+        acc = a[..., 5:7]
+        h = a[..., 7:]
+
+        self.assertTrue(np.allclose(a.position3d, position))
+        self.assertTrue(np.allclose(a.velocity, velocity))
+        self.assertTrue(np.allclose(a.acceleration, acc))
+        self.assertTrue(np.allclose(a.heading, h))
+
+    def test_property_setting(self):
+        a = np.random.rand(2, 8).view(AgentStateArray)
+        a.heading = 0.0
+        self.assertTrue(np.allclose(a[..., -1], np.zeros([2, 1])))
+
+    def test_heading_conversion(self):
+        a = np.random.rand(2, 8).view(AgentStateArray)
+        h = a[..., 7:]
+        hv = a.heading_vector
+        self.assertTrue(np.allclose(np.arctan2(hv[..., 1], hv[..., 0])[:, None], h))
+
+    def test_long_lat_velocity(self):
+        a = np.random.rand(8).view(AgentStateArray)
+        velocity = a[3:5]
+        h = a[7]
+        lonlat_v = a.as_format("v_lon,v_lat")
+        lonlat_v_correct = (
+            np.array([[np.cos(h), np.sin(h)], [-np.sin(h), np.cos(h)]])[None, ...]
+            @ velocity[..., None]
+        )[..., 0]
+
+        self.assertTrue(np.allclose(lonlat_v, lonlat_v_correct))
+
+        b = a.as_format("x,y,xd,yd,s,c")
+        s = b[-2]
+        c = b[-1]
+        lonlat_v = b.as_format("v_lon,v_lat")
+        lonlat_v_correct = (
+            np.array([[c, s], [-s, c]])[None, ...] @ velocity[..., None]
+        )[..., 0]
+
+        self.assertTrue(np.allclose(lonlat_v, lonlat_v_correct))
+
+    def test_long_lat_conversion(self):
+        a = np.random.rand(2, 8).view(AgentStateArray)
+        b = a.as_format("xd,yd,h")
+        c = b.as_format("v_lon,v_lat,h")
+        d = c.as_format("xd,yd,h")
+        self.assertTrue(np.allclose(b, d))
+
+    def test_as_format(self):
+        a = np.random.rand(2, 8).view(AgentStateArray)
+        b = a.as_format("x,y,z,xd,yd,xdd,ydd,s,c")
+        self.assertTrue(isinstance(b, AgentObsArray))
+        self.assertTrue(np.allclose(a, b.as_format(a._format)))
+
+    def test_as_ndarray(self):
+        a: AgentStateArray = np.random.rand(2, 8).view(AgentStateArray)
+        b = a.as_ndarray()
+        self.assertTrue(isinstance(b, np.ndarray))
+        self.assertFalse(isinstance(b, AgentStateArray))
+
+    def test_tensor_ops(self):
+        a = np.random.rand(2, 8).view(AgentStateArray)
+        b = a[0] + a[1]
+        c = np.mean(b)
+        self.assertFalse(isinstance(c, AgentStateArray))
+        self.assertTrue(isinstance(c, float))
+
+
+if __name__ == "__main__":
+    unittest.main()

@@ -1,0 +1,44 @@
+dataset:
+  name: sind
+  location: cqNR
+  data_dir: datasets/SinD_dataset
+  desired_dt: 0.1
+  use_lanelet2_maps: true
+
+scenario:
+  scene_index: 0
+  init_timestep:
+  num_steps: 20
+  ego_selection_strategy: longest_trajectory
+  ego_agent_name:
+
+simulation:
+  mode: ego_closed_loop
+  history_sec: 2.0
+  future_sec: 4.0
+  neighbor_radius: 50.0
+
+policies:
+  ego_policy: risk_idm
+  non_ego_policy: ground_truth
+  ego:
+    desired_velocity: 8.0
+    max_acceleration: 3.0
+    min_acceleration: -5.0
+  non_ego: {}
+
+checkpoints:
+  diffuser_ckpt_path: Simulation_test_toolchain/checkpoints/v2.0.ckpt
+
+output:
+  project_name: example_sind_single
+  root_dir: Simulation_test_toolchain/test_projects
+  save_html: true
+  save_json: true
+  save_csv: true
+
+visualization:
+  enabled: true
+  map_margin_m: 15.0
+  width: 1200
+  height: 760

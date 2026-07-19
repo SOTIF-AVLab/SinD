@@ -1,0 +1,57 @@
+[tool.isort]
+profile = "black"
+
+[build-system]
+requires = ["setuptools>=58", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3.8",
+    "License :: OSI Approved :: Apache Software License",
+]
+name = "sind-trajdata"
+version = "2.0.0"
+authors = [
+    { name = "SinD 2.0 contributors" },
+    { name = "Boris Ivanovic", email = "bivanovic@nvidia.com" },
+]
+description = "SinD 2.0 trajectory dataset tools built on a trajdata fork."
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "numpy>=1.19",
+    "tqdm>=4.62",
+    "matplotlib>=3.5",
+    "dill>=0.3.4",
+    "pandas>=1.4.1",
+    "pyarrow>=7.0.0",
+    "torch>=1.10.2",
+    "zarr>=2.11.0",
+    "kornia>=0.6.4",
+    "seaborn>=0.12",
+    "bokeh>=3.0.3",
+    "geopandas>=0.13.2",
+    "protobuf==3.19.4",
+    "scipy>=1.9.0",
+    "opencv-python>=4.5.0",
+    "shapely>=2.0.0",
+]
+
+[tool.setuptools.package-data]
+"trajdata.dataset_specific.sind" = ["data/*.json", "*.json"]
+
+[project.optional-dependencies]
+av2 = ["av2==0.2.1"]
+dev = ["black", "isort", "pytest", "pytest-xdist", "twine", "build"]
+interaction = ["lanelet2==1.2.1"]
+lyft = ["l5kit==1.5.0"]
+nusc = ["nuscenes-devkit==1.1.9"]
+waymo = ["tensorflow==2.11.0", "waymo-open-dataset-tf-2-11-0", "intervaltree"]
+vod = ["vod-devkit==1.1.1"]
+
+[project.urls]
+"Homepage" = "https://github.com/SOTIF-AVLab/SinD"
+"Bug Tracker" = "https://github.com/SOTIF-AVLab/SinD/issues"

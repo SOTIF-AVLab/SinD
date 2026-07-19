@@ -1,0 +1,49 @@
+# trajdata Environment Requirements
+# Python 3.10+
+
+# Core dependencies
+numpy==1.26.4
+pandas==1.5.3
+torch==2.9.1
+scipy==1.15.3
+scikit-learn==1.7.2
+
+# Visualization
+matplotlib==3.10.7
+seaborn==0.13.2
+bokeh==3.8.1
+opencv-python==4.12.0.88
+
+# Geospatial
+geopandas==1.1.1
+shapely==2.1.2
+pyproj==3.7.1
+pyogrio==0.12.1
+
+# Lanelet2 map support
+lanelet2==1.2.2
+
+# Dataset specific
+nuscenes-devkit==1.1.9
+pycocotools==2.0.10
+pyquaternion==0.9.9
+
+# Utilities
+tqdm==4.67.1
+dill==0.4.0
+pyyaml==6.0.3
+joblib==1.5.2
+networkx==3.4.2
+
+# Jupyter
+jupyter==1.1.1
+jupyterlab==4.5.0
+ipython==8.37.0
+ipykernel==7.1.0
+
+# Additional dependencies
+kornia==0.8.2
+pillow==12.0.0
+pyarrow==22.0.0
+protobuf==3.19.4
+zarr==2.18.3
