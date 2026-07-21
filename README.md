@@ -14,7 +14,7 @@ intersection diversity, high-interaction traffic, semantic scenario
 annotations, a compact policy-testing toolchain, and a 3DGS visual simulation
 extension.
 
-[Paper](https://arxiv.org/abs/2209.02297) · [YouTube Demo](https://youtu.be/H9QSGqioYww) · [Bilibili Demo](https://www.bilibili.com/video/BV1wN4y1F7Sc)
+[Paper](https://arxiv.org/abs/2607.16943) · [YouTube Demo](https://youtu.be/H9QSGqioYww) · [Bilibili Demo](https://www.bilibili.com/video/BV1wN4y1F7Sc)
 
 ---
 
@@ -244,7 +244,8 @@ Use the subject:
 ```
 
 Please include your laboratory or department, research interests, and intended
-use of the dataset.
+use of the dataset. If you need the Diffuser model weights, explicitly state
+this in your application.
 
 ---
 
@@ -253,15 +254,13 @@ use of the dataset.
 If you find the dataset or toolchain useful, please cite the corresponding
 paper.
 
-**SinD v2.0 (placeholder; under review)**
-
-*(The arXiv link will be updated in a few days.)*
+**[SinD v2.0 (arXiv:2607.16943)](https://arxiv.org/abs/2607.16943)**
 
 ```bibtex
 @article{sindv2_2026,
-  title={SinD v2: An Intersection Drone Dataset Enabling High-Reliability Traffic Safety Validation...},
-  author={Yunwei Li, Shengjie Fu, Chunrong Chen, Chengxiang Zhao, Yuchen Fan,  Mingyu Zhu, Yanchao Xu, Yuxin Zhang, Lan Yang, Chuzhao Li, Jie Ji, Yi He, Abhijit Sarkar, Akash Sonth, Hong Wang, and Jun Li},
-  journal={arXiv preprint coming soon},
+  title={SinD 2.0: A Multi-City UAV Dataset with Semantic Risk Annotations for SOTIF-Oriented Safety Validation at Signalized Intersections},
+  author={Li, Yunwei and Fu, Shengjie and Chen, Chunrong and Zhao, Chengxiang and Fan, Yuchen and Zhu, Mingyu and Xu, Yanchao and Zhang, Yuxin and Yang, Lan and Li, Chuzhao and Ji, Jie and He, Yi and Sarkar, Abhijit and Sonth, Akash and Wang, Hong and Li, Jun},
+  journal={arXiv preprint arXiv:2607.16943},
   year={2026}
 }
 ```
